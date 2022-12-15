@@ -1,10 +1,8 @@
-import { FC } from 'react';
-import TodoList from './todo_list';
+import { FC } from "react";
+import Calculator from "./calculator";
 
 const App: FC = () => {
-  return (
-    <TodoList />
-  );
-}
+  return <Calculator />;
+};
 
 export default App;

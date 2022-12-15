@@ -100,12 +100,12 @@ const Calculator: FC = () => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl border-t-2 border-l-2 border-r-2 w-1/3 text-center py-3">
+      <h1 className="text-3xl border-t-2 border-l-2 border-r-2 w-1/4 text-center py-3">
         Calculator
       </h1>
       <Result first={first} last={last} />
       <div
-        className="h-1/2 w-1/3"
+        className="h-1/3 w-1/4"
         style={{ background: backGround, color: color }}
       >
         {data.map((item, index) => {
@@ -114,6 +114,7 @@ const Calculator: FC = () => {
               className="w-1/3 border-2 h-1/5 text-lg"
               key={index}
               onClick={() => handleClick(item.result)}
+              style={{background: item.background}}
             >
               {item.result}
             </button>
